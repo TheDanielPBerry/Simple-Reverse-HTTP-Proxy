@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  reverse_proxy:
+    container_name: reverse_proxy
+    image: reverse_proxy
+    build:
+      context: .
+      target: reverse_proxy
+      dockerfile: Dockerfile
+    volumes:
+      - ./src:/usr/src/app
+    ports:
+      - 80:80
+      - 3306:3306
