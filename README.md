@@ -12,7 +12,7 @@ http://localhost:3000/home?color=red
 
 
 ## Setup
-config.ini
+[config.ini](config.ini.example)
 ```ini
 REFRESH_PASSCODE=abc123
 
@@ -21,9 +21,10 @@ default=9001
 survey=9001
 ```
 Once config.ini is setup, it will map routes on the left to ports on the right  
-You are ready to run main  
-
-If you want to refresh this config file, without restarting the proxy, navigate to this url using the REFRESH_PASSCODE setup in your ini:
+The default key will allow you to map the empty default route `/`  
+You are ready to run  
+  
+If you want to refresh the config file, without restarting the proxy, navigate to this url using the REFRESH_PASSCODE setup in your ini:
 `http://localhost/refresh?passcode=abc123`
 
 ## Possible Applications and Iterations
