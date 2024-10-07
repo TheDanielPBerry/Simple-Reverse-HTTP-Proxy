@@ -1,7 +1,7 @@
 # Simple Reverse HTTP Proxy
 
-Allow url requests to the same host be routed to different ports based on their paths  
-**Not recommended for Use in Production  **
+Allow http requests to the same host be routed to different ports on the same host based on their url path  
+**Not recommended for Use in Production**  
 Example:
 ```
 https://localhost/survey/home?color=red
@@ -26,7 +26,7 @@ You are ready to run main
 If you want to refresh this config file, without restarting the proxy, navigate to this url using the REFRESH_PASSCODE setup in your ini:
 `http://localhost/refresh?passcode=abc123`
 
-## Possible Applications
-- One process forwards requests to docker containers running on other ports
-- Forward requests to other hosts in the same network
-- Require authentication for certain routes but not others
+## Possible Applications and Iterations
+- Forwards requests to multiple docker containers running on other ports
+- Forward requests to other hosts in the same network(With some modification)
+- Require authentication for certain routes but not others(With some modification)
